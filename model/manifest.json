@@ -1,0 +1,6 @@
+{
+  "sha256": {
+    "xgb_final_model.joblib": "1484aebc156c4f6214206061252792b084048894f28bcf8142891b282f216ccb",
+    "tfidf_vectorizer.joblib": "40748d121526c53de7b697e9fea4b092c351871db8c99d4553400817f9ec8131"
+  }
+}

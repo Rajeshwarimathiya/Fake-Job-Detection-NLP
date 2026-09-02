@@ -1,9 +1,7 @@
-# Python bytecode and caches
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
-.pytest_cache/
-.coverage
 
 # Virtual environments
 .venv/
@@ -12,20 +10,13 @@ env/
 
 # Local data and secrets
 data/
-.env
-.env.*
-!.env.example
 .streamlit/secrets.toml
+.env
 
-# Jupyter
+# Notebook and tool files
 .ipynb_checkpoints/
-
-# IDE and operating-system files
 .vscode/
-.idea/
-.DS_Store
-Thumbs.db
 
-# Generated model outputs and local reports
-*.log
-model/metadata.local.json
+# Generated caches and reports
+.pytest_cache/
+.coverage
