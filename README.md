@@ -111,7 +111,7 @@ This project includes local model interpretation using **LIME (Local Interpretab
 SHAP takes explainability to the next level — by showing the overall importance of each word across all job posts, and letting us zoom into individual predictions.
 
 What we did:
-- Used SHAP’s `LinearExplainer` for Logistic Regression + TF-IDF
+- Used SHAP’s tree explainer for the XGBoost + TF-IDF model
 - Visualized **global feature importance** with bar & beeswarm plots
 - Visualized **individual prediction explanations** with waterfall plots
 
@@ -151,15 +151,14 @@ Fake_Job_Detection/
 ├── visuals/shap_waterfall_sample2.png         # SHAP waterfall (sample 2)
 ├── README.md                                  # Project overview and documentation
 
-🌐 Deployed Streamlit App
+## Streamlit application
 
-🖥️ Built with ⁠ Streamlit ⁠, offering:
--  ⁠🎯 Pre-filled Example Job Button
--⁠  ⁠🫆 Predict Button with Confidence Score
--⁠  ⁠📉 Visual Confidence Progress
--  ⁠📄 Download Prediction
--⁠  ⁠📊 SHAP Visuals
--⁠  ⁠🧹 Clear Fields Button
+Built with Streamlit, offering:
+- Pre-filled example listing
+- Single-listing analysis with confidence and sensitivity controls
+- Manual review for uncertain predictions
+- SHAP local and global explanations
+- Batch CSV analysis and downloadable results
 
  📸 App Screenshots
 <p align="center">
@@ -167,8 +166,7 @@ Fake_Job_Detection/
   <img src="visuals/app_prediction.png" width="500"/>
 </p>
 
-🔗 [Deployed App](https://your-streamlit-app-link)
-)
+Deploy this repository through Streamlit Community Cloud with `app.py` as the main file.
 
 ## Reproducible retraining
 
