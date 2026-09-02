@@ -1,9 +1,14 @@
-🕵️‍♂️ Fake Job Detection using NLP & Machine Learning
+# Fake Job Detection using NLP and Machine Learning
 
-🚀 **Live Now** – SHAP, LIME Added | ✅ Streamlit Web App Deployed
-App link🔗 - https://fake-job-detection-nlp.streamlit.app
+AI-powered fake job posting detection system built with Python, Streamlit, NLP, TF-IDF, XGBoost, scikit-learn, and SHAP explainability.
 
-This project focuses on detecting **fake job postings** using **Natural Language Processing (NLP)** and **Machine Learning**. Built as an end-to-end text classification system, it analyzes job listings and classifies them as real or fake using a Logistic Regression model on TF-IDF-transformed data.
+The Streamlit application analyzes job titles, descriptions, and requirements. It provides confidence scoring, a manual-review state for uncertain results, suspicious-language review signals, SHAP explanations, verification checks, and batch CSV analysis.
+
+Run locally:
+
+```powershell
+python -m streamlit run app.py
+```
 
 
 
@@ -13,11 +18,12 @@ This project focuses on detecting **fake job postings** using **Natural Language
 - Combines job title, description, and requirements into one text column
 - Cleans the text (lowercase, removes punctuation, stopwords)
 - Converts text into numerical form using **TF-IDF**
-- Trains a **Logistic Regression** classifier
-- Evaluates model performance using accuracy, precision, recall, and confusion matrix
-- Visualizes performance with a heatmap
-- Adds model interpretability using **LIME** and **SHAP**
-- Deploys as a interactive *Streamlit Web App*
+- Trains an **XGBoost** classifier using the reproducible `train_model.py` workflow
+- Uses stratified train, validation, and test splits without TF-IDF leakage
+- Tunes the decision threshold on validation data
+- Reports accuracy, precision, recall, F1, ROC-AUC, and average precision
+- Adds local SHAP explanations and global visualizations
+- Supports secure, size-limited batch CSV analysis
 
 
 
