@@ -166,6 +166,8 @@ Built with Streamlit, offering:
   <img src="visuals/app_prediction.png" width="500"/>
 </p>
 
+Live application: https://fake-job-detection-rajeshwari.streamlit.app
+
 Deploy this repository through Streamlit Community Cloud with `app.py` as the main file.
 
 ## Reproducible retraining
