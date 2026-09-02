@@ -162,8 +162,8 @@ Built with Streamlit, offering:
 
  📸 App Screenshots
 <p align="center">
-  <img src="visuals/app_home.png" width="500"/>
-  <img src="visuals/app_prediction.png" width="500"/>
+  <img src="visuals/live_app_home.png" width="500"/>
+  <img src="visuals/live_app_prediction.png" width="500"/>
 </p>
 
 Live application: https://fake-job-detection-rajeshwari.streamlit.app
