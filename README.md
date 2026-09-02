@@ -16,13 +16,13 @@ python -m streamlit run app.py
 
 - Loads and explores a real-world job postings dataset
 - Combines job title, description, and requirements into one text column
-- Cleans the text (lowercase, removes punctuation, stopwords)
-- Converts text into numerical form using **TF-IDF**
+- Normalizes text consistently during training and inference
+- Converts text into numerical form using **TF-IDF** n-grams
 - Trains an **XGBoost** classifier using the reproducible `train_model.py` workflow
 - Uses stratified train, validation, and test splits without TF-IDF leakage
 - Tunes the decision threshold on validation data
 - Reports accuracy, precision, recall, F1, ROC-AUC, and average precision
-- Adds local SHAP explanations and global visualizations
+- Adds local and global **SHAP** explanations
 - Supports secure, size-limited batch CSV analysis
 
 
